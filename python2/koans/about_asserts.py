@@ -72,7 +72,7 @@ class AboutAsserts(Koan):
         #
         # See for yourself:
 
-        self.assertEqual(__, "naval".__class__) # It's str, not <type 'str'>
+        self.assertEqual(str, "naval".__class__) # It's str, not <type 'str'>
 
         # Need an illustration? More reading can be found here:
         #
