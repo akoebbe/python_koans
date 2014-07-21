@@ -28,11 +28,11 @@ class AboutStrings(Koan):
 
     def test_use_single_quotes_to_create_string_with_double_quotes(self):
         string = 'He said, "Go Away."'
-        self.assertEqual(__, string)
+        self.assertEqual('He said, "Go Away."', string)
 
     def test_use_double_quotes_to_create_strings_with_single_quotes(self):
         string = "Don't"
-        self.assertEqual(__, string)
+        self.assertEqual("Don't", string)
 
     def test_use_backslash_for_escaping_quotes_in_strings(self):
         a = "He said, \"Don't\""
