@@ -24,7 +24,14 @@ def triangle(a, b, c):
     :param c: integer
     :return: string
     """
-    sides = (a, b, c)
+    sides = [a, b, c]
+    sides.sort()
+
+    if min(sides) < 1:
+        raise TriangleError
+    elif sides[0] + sides[1] < sides[2]:
+        raise TriangleError
+
     if len(set(sides)) == 2:
         return 'isosceles'
     elif len(set(sides)) == 1:
